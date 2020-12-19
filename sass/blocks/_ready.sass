@@ -1,12 +1,26 @@
 .ready
     &-conteiner
         margin: auto
-        max-width: 1280px
+        width: 1280px
+        max-width: 95%
         height: 700px
-        background-image: url(../img/ready_img.jpg)
+        background-color: #E8EAE9
+        border-radius: 10px 
+        position: relative
+        overflow: hidden
+        margin-bottom: 120px
+    &_hero
+        position: absolute
+        width: 925px
+        height: 100%
+        z-index: 1
+        right: 0
+        top: 0
+        bottom: 0
+        left: auto    
     &-content
         display: flex
-        flex-direction: column
+        flex-direction: column        
         justify-content: space-between
         max-width: 652px
         padding-top: 62px
@@ -24,14 +38,20 @@
         color: #36B37E
         padding: 6px 16px
         border-radius: 20px
-        margin-bottom: 23px
+        margin-bottom: 22px
+        z-index: 1
     &_title
         max-width: 425px
         color: #183B56
         font-family: hkgrotesk-bold
+        font-feature-settings: "locl" 0
+        font-style: normal;
+        font-weight: bold;
         font-size: 56px
         line-height: 68px
-        margin: 0 0 14px 0
+        margin: 0 0 15px 0
+        letter-spacing: 0.22px
+        z-index: 1
     &_text
         width: 652px
         font-family: Open Sans
@@ -40,7 +60,9 @@
         font-size: 20px
         line-height: 36px
         margin-bottom: 50px
+        z-index: 1
     &_button
+        cursor: pointer
         max-width: 259px
         color: #fff
         font-family: Open Sans;
@@ -50,10 +72,17 @@
         line-height: 25px;
         background: #183B56
         border-radius: 8px
-        padding: 15px 38px 13px 38px
-        margin-bottom: 46px
+        padding: 16px 40px                
+        border: none 
+        z-index: 2       
+        &_link
+            z-index: 2
+            cursor: pointer
+            max-width: 259px
+            max-height: 55px
+            margin-bottom: 48px
     &_ul
-        width: 456px
+        width: 463px
         display: flex
         justify-content: space-between
         padding: 0
@@ -63,12 +92,15 @@
         display: flex
         align-items: center
         font-family: hkgrotesk-medium
+        font-feature-settings: "locl" 0
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
+        letter-spacing: 0.2px
     &_offer
-        margin-right: 8px
+        margin-right: 7px
         width: 38px
         height: 38px
-            
+    &_offers
+        z-index: 1
